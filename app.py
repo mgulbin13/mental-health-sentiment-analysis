@@ -20,12 +20,12 @@ def predict(text):
             condition = "a personality disorder"
         case "LABEL_6":
             condition = "bipolar"
-    output = f"You are feeling {condition} with a confidence of {round((prediction[0]['score'] * 100), 2)}%"
+    output = f"You are feeling {condition} ({round((prediction[0]['score'] * 100), 2)}% confidence)"
     return output
 
 st.title('Say something...')
 
-input = st.text_input('', placeholder='Your text here...')
+input = st.text_input('input', placeholder='Your text here...', label_visibility='hidden')
 st.write(f"### {predict(input)}")
 
 
