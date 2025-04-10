@@ -1,7 +1,7 @@
 import streamlit as st
 from transformers import pipeline
 
-classifier = pipeline('text-classification', model='./model/initial')
+classifier = pipeline('text-classification', model='./model/final')
 
 def predict(text):
     prediction = classifier(text)
