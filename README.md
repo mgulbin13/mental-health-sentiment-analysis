@@ -55,7 +55,7 @@ For a Neural Network implementation of this model, I chose to use BERT (Bidirect
 
 ## Hyperparameter Tuning
 
-The key hyperparameters that I tuned to maximize model performance were learning rate and max length of tokens. After tuning, the model achieved a F1 score of 0.73.
+The key hyperparameters that I tuned to maximize model performance were learning rate, weight decay, and sample size. After tuning, the model achieved a F1 score of 0.73.
 
 <a id="finalimplementation"></a>
 
